@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beli Sekarang - Jaya Jakarta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: var(--bg-paper);">
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-1" href="index.html">Jaya <span style="color: var(--accent-red);">Jakarta</span></a>
+            <button class="navbar-toggler border-2 border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link active-marker" href="book.html">Buku</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item">
+                        <a href="https://wa.me/628123456789" class="btn-sketch ms-lg-3">Pesan WA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="wobbly-box p-5 bg-white">
+                    <h1 class="font-kalam text-center mb-4">Formulir <span class="text-danger">Pemesanan</span></h1>
+                    
+                    <form>
+                        <div class="mb-4">
+                            <label class="font-kalam fs-4">Nama Lengkap</label>
+                            <input type="text" class="form-control form-sketch" placeholder="Tulis namamu di sini...">
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="font-kalam fs-4">Pilih Buku</label>
+                            <select class="form-select form-sketch">
+                                <option>Jaya Jakarta: Awal (Rp 85.000)</option>
+                                <option>Senja di Kota Tua (Rp 92.000)</option>
+                                <option>Metropolitan Love (Rp 78.000)</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="font-kalam fs-4">Alamat Pengiriman</label>
+                            <textarea class="form-control form-sketch" rows="4" placeholder="Alamat lengkap tujuan..."></textarea>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <label class="font-kalam fs-4">Metode Bayar</label>
+                                <select class="form-select form-sketch">
+                                    <option>Transfer Bank</option>
+                                    <option>E-Wallet (OVO/Gopay)</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 text-end d-flex align-items-end justify-content-end">
+                                <button type="submit" class="btn-sketch w-100 fs-4">Konfirmasi Beli</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <p class="text-center mt-4 font-kalam">* Pesananmu akan dikonfirmasi melalui WhatsApp setelah klik tombol di atas.</p>
+            </div>
+        </div>
+    </main>
+
+    <style>
+        /* --- FORM SKETCH STYLE --- */
+
+.form-sketch {
+    border: 2px solid var(--text-pencil) !important;
+    border-radius: 10px 30px 10px 30px !important; /* Sudut tidak simetris */
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.2rem;
+    padding: 12px;
+    background-color: #fffdfa;
+    box-shadow: 4px 4px 0px var(--text-pencil);
+}
+
+.form-sketch:focus {
+    box-shadow: 2px 2px 0px var(--accent-red);
+    border-color: var(--accent-red) !important;
+    outline: none;
+}
+
+/* Wobbly Box untuk Container Form */
+.wobbly-box {
+    border: 3px solid var(--text-pencil);
+    border-radius: 15px 150px 15px 150px / 150px 15px 150px 15px;
+    box-shadow: 10px 10px 0px var(--text-pencil);
+}
+
+/* Tulisan di atas input */
+label.font-kalam {
+    margin-bottom: 5px;
+    display: block;
+    color: var(--text-pencil);
+}
+ /* --- NAVBAR STYLE --- */
+        .navbar {
+            background-color: rgba(253, 251, 247, 0.95);
+            border-bottom: 2px dashed var(--text-pencil);
+            padding: 1rem 0;
+            backdrop-filter: blur(5px);
+        }
+        .nav-link {
+            font-size: 1.3rem;
+            color: var(--text-pencil) !important;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .nav-link:hover {
+            color: var(--accent-red) !important;
+            text-decoration: underline wavy;
+        }
+        .active-marker {
+            background: var(--post-it-yellow);
+            border-radius: 50% 10% 40% 5% / 10% 40% 10% 50%;
+            padding: 5px 15px !important;
+        }
+        /* --- CSS NAVBAR IDENTIK INDEX --- */
+
+.navbar {
+    background-color: rgba(253, 251, 247, 0.98); /* Warna kertas krem terang */
+    border-bottom: 3px dashed var(--text-pencil) !important; /* Garis bawah putus-putus gaya jahitan */
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+/* Brand Logo (Jaya Jakarta) */
+.navbar-brand {
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+    transform: rotate(-2deg); /* Miring sedikit agar organik */
+    display: inline-block;
+    color: var(--text-pencil) !important;
+}
+
+/* Menu Navigasi */
+.nav-link {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.3rem;
+    color: var(--text-pencil) !important;
+    margin: 0 12px;
+    position: relative;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+/* Hover Menu: Coretan Gelombang */
+.nav-link:hover {
+    color: var(--accent-red) !important;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+/* Penanda Halaman Aktif (Efek Spidol Kuning) */
+.active-marker {
+    background: #fff9c4; /* Kuning highlighter */
+    /* Bentuk lingkaran tidak sempurna/asimetris */
+    border-radius: 50% 10% 40% 5% / 10% 40% 10% 50%;
+    transform: rotate(-1deg);
+    padding: 5px 18px !important;
+}
+
+/* Tombol Pesan WA (Gaya Kotak Sketsa) */
+.btn-sketch {
+    font-family: 'Kalam', cursive;
+    background: white;
+    color: var(--text-pencil);
+    border: 3px solid var(--text-pencil);
+    /* Border radius yang 'goyang' / tidak lurus */
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 4px 4px 0px var(--text-pencil);
+    transition: all 0.2s ease;
+}
+
+.btn-sketch:hover {
+    background: var(--accent-red);
+    color: white !important;
+    transform: translate(2px, 2px); /* Efek tombol ditekan */
+    box-shadow: 0px 0px 0px var(--text-pencil);
+}
+
+/* Tampilan Mobile */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: #fffdf5; /* Warna kertas */
+        border: 3px solid var(--text-pencil);
+        border-radius: 15px;
+        margin-top: 15px;
+        padding: 20px;
+        box-shadow: 8px 8px 0px rgba(0,0,0,0.1);
+    }
+    
+    .nav-item {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+        /* --- FOOTER STYLE --- */
+        .footer-handdrawn {
+            background-color: var(--muted);
+            position: relative;
+            padding: 5rem 0 2rem 0;
+            margin-top: 5rem;
+            clip-path: polygon(0% 5%, 2.5% 0%, 5% 5%, 7.5% 0%, 10% 5%, 12.5% 0%, 15% 5%, 17.5% 0%, 20% 5%, 22.5% 0%, 25% 5%, 27.5% 0%, 30% 5%, 32.5% 0%, 35% 5%, 37.5% 0%, 40% 5%, 42.5% 0%, 45% 5%, 47.5% 0%, 50% 5%, 52.5% 0%, 55% 5%, 57.5% 0%, 60% 5%, 62.5% 0%, 65% 5%, 67.5% 0%, 70% 5%, 72.5% 0%, 75% 5%, 77.5% 0%, 80% 5%, 82.5% 0%, 85% 5%, 87.5% 0%, 90% 5%, 92.5% 0%, 95% 5%, 97.5% 0%, 100% 5%, 100% 100%, 0% 100%);
+        }
+        .footer-link {
+            color: var(--text-pencil);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .footer-link:hover { color: var(--accent-red); text-decoration: line-through; }
+
+    </style>
+
+ <footer class="footer-handdrawn">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4 col-md-12">
+                    <div class="fs-1 font-kalam mb-3">Jaya <span class="text-danger">Jakarta</span></div>
+                    <p class="fs-5">Catatan perjalanan, cinta, dan realita di jantung Indonesia. Novel yang mengajakmu melihat Jakarta dari sisi yang berbeda.</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4 class="font-kalam border-bottom border-dark pb-2 mb-3">Menu</h4>
+                            <a href="#" class="footer-link">Sinopsis</a>
+                            <a href="#" class="footer-link">Galeri</a>
+                            <a href="#" class="footer-link">Review</a>
+                        </div>
+                        <div class="col-6">
+                            <h4 class="font-kalam border-bottom border-dark pb-2 mb-3">Beli</h4>
+                            <a href="#" class="footer-link">Gramedia</a>
+                            <a href="#" class="footer-link">Shopee</a>
+                            <a href="#" class="footer-link">Tokopedia</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="wobbly-box p-4" style="background: var(--post-it-yellow); transform: rotate(1deg);">
+                        <h4 class="font-kalam mb-2">Update Terbaru!</h4>
+                        <p>Dapatkan info rilis bab baru.</p>
+                        <div class="input-group">
+                            <input type="email" class="form-control border-2 border-dark" placeholder="Email...">
+                            <button class="btn btn-dark fw-bold">Kirim</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 border-2 border-dark opacity-25" style="border-style: dashed;">
+            <div class="row pb-4 text-center">
+                <div class="col-12">
+                    <p>© 2026 Jaya Jakarta. Didesain dengan ❤ dan Pensil 2B.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

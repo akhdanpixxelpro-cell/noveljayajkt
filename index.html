@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaya Jakarta - Toko Buku Hand-Drawn</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- =========================
+SEO + AI OVERVIEW + PAGESPEED + FAVICON
+DISAMBUNG TANPA UBAH STRUKTUR
+========================= -->
+
+<meta name="description" content="Jaya Jakarta adalah toko buku hand-drawn dengan koleksi novel Indonesia terbaik. Menyediakan buku fiksi, romance, pendidikan, dan bisnis dengan desain visual unik.">
+<meta name="keywords" content="toko buku online, novel indonesia, jaya jakarta, beli buku, buku fiksi, buku romance">
+<meta name="author" content="Jaya Jakarta">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+<!-- Open Graph / AI Overview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jaya Jakarta - Toko Buku Hand-Drawn">
+<meta property="og:description" content="Toko buku unik bernuansa sketsa tangan dengan koleksi novel Indonesia terbaik.">
+<meta property="og:url" content="https://jayajakarta.com/">
+<meta property="og:image" content="https://jayajakarta.com/img/KumpulanCerpenSenandungKunangkunang.jpg">
+<meta property="og:site_name" content="Jaya Jakarta">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jaya Jakarta - Toko Buku Hand-Drawn">
+<meta name="twitter:description" content="Beli novel Indonesia dengan pengalaman visual artistik.">
+<meta name="twitter:image" content="https://jayajakarta.com/img/KumpulanCerpenSenandungKunangkunang.jpg">
+
+<!-- Pagespeed Optimization -->
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="//unpkg.com">
+<link rel="preload" as="image" href="img/KumpulanCerpenSenandungKunangkunang.jpg">
+
+<!-- Favicon Optimization -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="shortcut icon" href="/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png">
+<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<meta name="theme-color" content="#ff4d4d">
+
+<!-- Structured Data (AI Search Ready) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BookStore",
+  "name": "Jaya Jakarta",
+  "url": "https://jayajakarta.com",
+  "logo": "https://jayajakarta.com/favicon/android-chrome-512x512.png",
+  "description": "Toko buku online dengan konsep hand-drawn dan koleksi novel Indonesia terbaik.",
+  "sameAs": [
+    "https://wa.me/628123456789"
+  ]
+}
+</script>
+
+    <style>
+        /* --- DESIGN SYSTEM TOKENS --- */
+        :root {
+            --bg-paper: #fdfbf7;
+            --text-pencil: #2d2d2d;
+            --muted: #e5e0d8;
+            --accent-red: #ff4d4d;
+            --accent-blue: #2d5da1;
+            --post-it-yellow: #fff9c4;
+            --font-head: 'Kalam', cursive;
+            --font-body: 'Patrick Hand', cursive;
+            --wobbly-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+        }
+
+        /* --- GLOBAL STYLES --- */
+        body {
+            background-color: var(--bg-paper);
+            color: var(--text-pencil);
+            font-family: var(--font-body);
+            background-image: radial-gradient(var(--muted) 1px, transparent 1px);
+            background-size: 24px 24px;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6, .navbar-brand, .font-kalam {
+            font-family: var(--font-head);
+            font-weight: 700;
+        }
+
+        /* --- UTILITY CLASSES --- */
+        .wobbly-box {
+            border: 3px solid var(--text-pencil);
+            border-radius: var(--wobbly-radius);
+            background: white;
+            transition: all 0.2s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translate(-2px, -2px) rotate(-1deg);
+            box-shadow: 6px 6px 0px 0px var(--text-pencil);
+        }
+
+        /* --- NAVBAR STYLE --- */
+        .navbar {
+            background-color: rgba(253, 251, 247, 0.95);
+            border-bottom: 2px dashed var(--text-pencil);
+            padding: 1rem 0;
+            backdrop-filter: blur(5px);
+        }
+        .nav-link {
+            font-size: 1.3rem;
+            color: var(--text-pencil) !important;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .nav-link:hover {
+            color: var(--accent-red) !important;
+            text-decoration: underline wavy;
+        }
+        .active-marker {
+            background: var(--post-it-yellow);
+            border-radius: 50% 10% 40% 5% / 10% 40% 10% 50%;
+            padding: 5px 15px !important;
+        }
+
+        /* --- HERO & BOOKS --- */
+        .hero-section { padding: 4rem 0; }
+        .hero-image-container {
+            transform: rotate(2deg);
+            border: 3px solid var(--text-pencil);
+            box-shadow: 8px 8px 0 var(--text-pencil);
+            padding: 10px;
+            background: white;
+        }
+
+        .book-card {
+            border: 2px solid var(--text-pencil);
+            background: white;
+            padding: 15px;
+            height: 100%;
+            position: relative;
+            border-radius: 5px 20px 5px 20px; 
+            box-shadow: 4px 4px 0 var(--muted);
+            transition: all 0.2s;
+        }
+        .book-card:hover {
+            transform: rotate(-1deg) scale(1.02);
+            box-shadow: 8px 8px 0 var(--text-pencil);
+        }
+        .book-cover {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border: 2px solid var(--text-pencil);
+            margin-bottom: 15px;
+        }
+
+        .btn-sketch {
+            background: white;
+            border: 3px solid var(--text-pencil);
+            border-radius: var(--wobbly-radius);
+            padding: 10px 25px;
+            font-family: var(--font-head);
+            box-shadow: 4px 4px 0 var(--text-pencil);
+            transition: 0.2s;
+            text-decoration: none;
+            color: var(--text-pencil);
+            display: inline-block;
+        }
+        .btn-sketch-primary { background: var(--accent-red); color: white; }
+        .btn-sketch:hover { transform: translate(2px, 2px); box-shadow: 0px 0px 0 var(--text-pencil); }
+
+        /* --- FOOTER STYLE --- */
+        .footer-handdrawn {
+            background-color: var(--muted);
+            position: relative;
+            padding: 5rem 0 2rem 0;
+            margin-top: 5rem;
+            clip-path: polygon(0% 5%, 2.5% 0%, 5% 5%, 7.5% 0%, 10% 5%, 12.5% 0%, 15% 5%, 17.5% 0%, 20% 5%, 22.5% 0%, 25% 5%, 27.5% 0%, 30% 5%, 32.5% 0%, 35% 5%, 37.5% 0%, 40% 5%, 42.5% 0%, 45% 5%, 47.5% 0%, 50% 5%, 52.5% 0%, 55% 5%, 57.5% 0%, 60% 5%, 62.5% 0%, 65% 5%, 67.5% 0%, 70% 5%, 72.5% 0%, 75% 5%, 77.5% 0%, 80% 5%, 82.5% 0%, 85% 5%, 87.5% 0%, 90% 5%, 92.5% 0%, 95% 5%, 97.5% 0%, 100% 5%, 100% 100%, 0% 100%);
+        }
+        .footer-link {
+            color: var(--text-pencil);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .footer-link:hover { color: var(--accent-red); text-decoration: line-through; }
+
+        /* --- FAB --- */
+        .fab-container { position: fixed; bottom: 24px; right: 24px; display: flex; flex-direction: column; gap: 14px; z-index: 999; }
+        .fab-btn { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 8px 20px rgba(0,0,0,0.2); transition: 0.3s; }
+        .fab-top { background: var(--accent-blue); opacity: 0; transform: scale(0.8); }
+        .fab-top.show { opacity: 1; transform: scale(1); }
+
+        @media (max-width: 768px) {
+            .hero-image-container { transform: none; }
+            .active-marker { background: none; text-decoration: underline; }
+        }
+        /* ============================
+   MOBILE ANTI GOYANG FIX
+   ============================ */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Semua elemen aman dari overflow */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* MATIKAN semua efek gerak di mobile */
+@media (max-width: 768px) {
+
+  /* Stop semua transform */
+  * {
+    transform: none !important;
+  }
+
+  /* Stop hover lift & rotate */
+  .hover-lift:hover,
+  .book-card:hover,
+  .btn-sketch:hover,
+  .hero-image-container:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Hero image tidak boleh keluar layar */
+  .hero-image-container {
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 3px 3px 0 var(--muted);
+  }
+
+  .hero-image-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Kartu buku stabil */
+  .book-card {
+    box-shadow: 2px 2px 0 var(--muted);
+    border-width: 2px;
+  }
+
+  /* Matikan elemen yang keluar layar */
+  .tape,
+  .badge-discount {
+    display: none;
+  }
+
+  /* Navbar tidak boleh melebar */
+  .navbar {
+    overflow-x: hidden;
+  }
+
+  /* Grid lebih rapat dan stabil */
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* FAB tidak bikin geser layar */
+  .fab-container {
+    right: 16px;
+    bottom: 16px;
+  }
+}
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-1" href="index.html">Jaya <span style="color: var(--accent-red);">Jakarta</span></a>
+            <button class="navbar-toggler border-2 border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link active-marker" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="book.html">Buku</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item">
+                        <a href="https://wa.me/628123456789" class="btn-sketch ms-lg-3">Pesan WA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-2 order-md-1">
+                    <span class="badge bg-warning text-dark border border-dark mb-3 px-3 py-2" style="transform: rotate(-2deg); font-family: var(--font-head);">Buku Terlaris Minggu Ini!</span>
+                    <h1 class="display-2 mb-3">Petualangan di <span class="text-danger" style="text-decoration: underline wavy;">Hutan Kertas</span></h1>
+                    <p class="fs-4 text-muted mb-4">Sebuah kisah imajinatif tentang dunia yang terbuat dari sketsa dan coretan pensil yang tak pernah dihapus.</p>
+                    <div class="d-flex gap-3">
+                        <a href="beli.html" class="btn-sketch btn-sketch-primary">Beli</a>
+                        <a href="lihatdetail.html" class="btn-sketch">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="col-md-6 order-1 order-md-2 text-center mb-5 mb-md-0">
+                    <div class="d-inline-block position-relative">
+                        <i class="bi bi-stars position-absolute text-danger display-1" style="top:-30px; right:-30px; z-index:1; transform: rotate(15deg);"></i>
+                        <img src="img/KumpulanCerpenSenandungKunangkunang.jpg" alt="Featured Book" class="img-fluid hero-image-container w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="display-5 mb-5">Kategori Pilihan <i class="bi bi-pencil-square text-muted"></i></h2>
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="wobbly-box p-4 hover-lift h-100">
+                        <i class="bi bi-emoji-sunglasses fs-1 text-danger d-block mb-2"></i>
+                        <h4>Fiksi Remaja</h4>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="wobbly-box p-4 hover-lift h-100">
+                        <i class="bi bi-heart-pulse fs-1 text-primary d-block mb-2"></i>
+                        <h4>Romance</h4>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="wobbly-box p-4 hover-lift h-100">
+                        <i class="bi bi-briefcase fs-1 text-success d-block mb-2"></i>
+                        <h4>Bisnis</h4>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="wobbly-box p-4 hover-lift h-100">
+                        <i class="bi bi-mortarboard fs-1 text-dark d-block mb-2"></i>
+                        <h4>Pendidikan</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="py-5 bg-white border-top border-dark border-3" style="border-style: dashed;">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-5">
+                <div>
+                    <h2 class="mb-0">Buku Terbaru</h2>
+                    <p class="text-muted fs-5 mb-0">Baru saja mendarat di rak kami.</p>
+                </div>
+                <a href="#" class="btn btn-link text-dark fw-bold text-decoration-none">Lihat Semua <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+           <div class="row g-4">
+
+  <div class="col-6 col-md-3">
+    <div class="book-card">
+      <div class="tape"></div>
+      <span class="badge-discount">-20%</span>
+      <img src="https://placehold.co/300x450/e5e0d8/2d2d2d?text=Novel+1" class="book-cover">
+      <h5 class="mb-1">Laskar Pelangi</h5>
+      <p class="text-muted small mb-2">Andrea Hirata</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="fw-bold fs-5 text-danger">Rp 85.000</span>
+        <button class="btn btn-sm btn-outline-dark rounded-circle border-2"
+          data-bs-toggle="modal"
+          data-bs-target="#paymentModal"
+          data-title="Laskar Pelangi"
+          data-price="Rp 85.000">
+          <i class="bi bi-cart-plus"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-3">
+    <div class="book-card">
+      <img src="https://placehold.co/300x450/ff4d4d/white?text=Novel+2" class="book-cover">
+      <h5 class="mb-1">Bumi Manusia</h5>
+      <p class="text-muted small mb-2">Pramoedya A. Toer</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="fw-bold fs-5 text-danger">Rp 110.000</span>
+        <button class="btn btn-sm btn-outline-dark rounded-circle border-2"
+          data-bs-toggle="modal"
+          data-bs-target="#paymentModal"
+          data-title="Bumi Manusia"
+          data-price="Rp 110.000">
+          <i class="bi bi-cart-plus"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-3">
+    <div class="book-card">
+      <div class="tape"></div>
+      <img src="https://placehold.co/300x450/2d5da1/white?text=Novel+3" class="book-cover">
+      <h5 class="mb-1">Laut Bercerita</h5>
+      <p class="text-muted small mb-2">Leila S. Chudori</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="fw-bold fs-5 text-danger">Rp 95.000</span>
+        <button class="btn btn-sm btn-outline-dark rounded-circle border-2"
+          data-bs-toggle="modal"
+          data-bs-target="#paymentModal"
+          data-title="Laut Bercerita"
+          data-price="Rp 95.000">
+          <i class="bi bi-cart-plus"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-3">
+    <div class="book-card">
+      <img src="https://placehold.co/300x450/fff9c4/2d2d2d?text=Komik" class="book-cover">
+      <h5 class="mb-1">Detektif Conan 100</h5>
+      <p class="text-muted small mb-2">Aoyama Gosho</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="fw-bold fs-5 text-danger">Rp 35.000</span>
+        <button class="btn btn-sm btn-outline-dark rounded-circle border-2"
+          data-bs-toggle="modal"
+          data-bs-target="#paymentModal"
+          data-title="Detektif Conan 100"
+          data-price="Rp 35.000">
+          <i class="bi bi-cart-plus"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
+        </div>
+    </section>
+
+    <footer class="footer-handdrawn">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4 col-md-12">
+                    <div class="fs-1 font-kalam mb-3">Jaya <span class="text-danger">Jakarta</span></div>
+                    <p class="fs-5">Catatan perjalanan, cinta, dan realita di jantung Indonesia. Novel yang mengajakmu melihat Jakarta dari sisi yang berbeda.</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4 class="font-kalam border-bottom border-dark pb-2 mb-3">Menu</h4>
+                            <a href="#" class="footer-link">Sinopsis</a>
+                            <a href="#" class="footer-link">Galeri</a>
+                            <a href="#" class="footer-link">Review</a>
+                        </div>
+                        <div class="col-6">
+                            <h4 class="font-kalam border-bottom border-dark pb-2 mb-3">Beli</h4>
+                            <a href="#" class="footer-link">Gramedia</a>
+                            <a href="#" class="footer-link">Shopee</a>
+                            <a href="#" class="footer-link">Tokopedia</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="wobbly-box p-4" style="background: var(--post-it-yellow); transform: rotate(1deg);">
+                        <h4 class="font-kalam mb-2">Update Terbaru!</h4>
+                        <p>Dapatkan info rilis bab baru.</p>
+                        <div class="input-group">
+                            <input type="email" class="form-control border-2 border-dark" placeholder="Email...">
+                            <button class="btn btn-dark fw-bold">Kirim</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 border-2 border-dark opacity-25" style="border-style: dashed;">
+            <div class="row pb-4 text-center">
+                <div class="col-12">
+                    <p>© 2026 Jaya Jakarta. Didesain dengan ❤ dan Pensil 2B.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="paymentModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content wobbly-box p-3">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title font-kalam fs-3">Konfirmasi Pesanan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <h4 id="modalBookTitle" class="mb-1"></h4>
+                    <h3 id="modalBookPrice" class="text-danger mb-4"></h3>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-outline-dark py-3 fw-bold">💳 Transfer Bank</button>
+                        <button class="btn btn-outline-dark py-3 fw-bold">📱 QRIS / E-Wallet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fab-container">
+        <button class="fab-btn fab-top" id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+            <i class="bi bi-arrow-up text-white fs-4"></i>
+        </button>
+        <a href="https://wa.me/628123456789" class="fab-btn" style="background: #25D366; text-decoration:none;">
+            <i class="bi bi-whatsapp text-white fs-3"></i>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        lucide.createIcons();
+        
+        // Modal Logic
+        const paymentModal = document.getElementById('paymentModal');
+        paymentModal.addEventListener('show.bs.modal', function (event) {
+            const button = event.relatedTarget;
+            document.getElementById('modalBookTitle').textContent = button.getAttribute('data-title');
+            document.getElementById('modalBookPrice').textContent = button.getAttribute('data-price');
+        });
+
+        // Scroll Logic
+        window.addEventListener("scroll", () => {
+            const btn = document.getElementById("backToTop");
+            if (window.scrollY > 300) btn.classList.add("show");
+            else btn.classList.remove("show");
+        });
+    </script>
+</body>
+</html>

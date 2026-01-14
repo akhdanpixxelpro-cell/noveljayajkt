@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleksi Buku - Jaya Jakarta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: var(--bg-paper);">
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-1" href="index.html">Jaya <span style="color: var(--accent-red);">Jakarta</span></a>
+            <button class="navbar-toggler border-2 border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link active-marker" href="book.html">Buku</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item">
+                        <a href="https://wa.me/628123456789" class="btn-sketch ms-lg-3">Pesan WA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h1 class="font-kalam display-4">Koleksi <span class="text-danger">Cerita</span></h1>
+            <p class="fs-5">Pilih perjalananmu di belantara ibu kota.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="book-card p-3">
+                    <div class="book-cover mb-3" style="background: #e0e0e0; height: 350px; border: 2px solid #333;">
+                        <div class="d-flex h-100 align-items-center justify-content-center text-muted">Cover Buku 1</div>
+                    </div>
+                    <h3 class="font-kalam">Jaya Jakarta: Awal</h3>
+                    <p>Kisah tentang perantau yang mencoba menaklukkan kerasnya aspal Sudirman.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="fw-bold fs-4">Rp 85.000</span>
+                        <a href="#" class="btn-sketch btn-sm">Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="book-card p-3">
+                    <div class="book-cover mb-3" style="background: #d4e5ff; height: 350px; border: 2px solid #333;">
+                        <div class="d-flex h-100 align-items-center justify-content-center text-muted">Cover Buku 2</div>
+                    </div>
+                    <h3 class="font-kalam">Senja di Kota Tua</h3>
+                    <p>Misteri lama yang terkubur di bawah bangunan kolonial Jakarta Barat.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="fw-bold fs-4">Rp 92.000</span>
+                        <a href="#" class="btn-sketch btn-sm">Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="book-card p-3">
+                    <div class="book-cover mb-3" style="background: #fff4d4; height: 350px; border: 2px solid #333;">
+                        <div class="d-flex h-100 align-items-center justify-content-center text-muted">Cover Buku 3</div>
+                    </div>
+                    <h3 class="font-kalam">Metropolitan Love</h3>
+                    <p>Cinta yang tumbuh di antara kemacetan dan deru suara kereta komuter.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="fw-bold fs-4">Rp 78.000</span>
+                        <a href="#" class="btn-sketch btn-sm">Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <style>
+        /* --- BOOK CARD STYLE --- */
+.book-card {
+    background: white;
+    border: 3px solid var(--text-pencil);
+    /* Border radius tidak beraturan */
+    border-radius: 15px 150px 15px 150px / 150px 15px 150px 15px;
+    transition: all 0.3s ease;
+    height: 100%;
+    box-shadow: 8px 8px 0px var(--text-pencil);
+}
+
+.book-card:hover {
+    transform: translateY(-10px) rotate(-1deg);
+    box-shadow: 15px 15px 0px var(--accent-red);
+}
+
+.book-cover {
+    border-radius: 5px 20px 5px 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Garis hiasan di bawah judul kartu */
+.book-card h3 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+/* --- FOOTER STYLE --- */
+        .footer-handdrawn {
+            background-color: var(--muted);
+            position: relative;
+            padding: 5rem 0 2rem 0;
+            margin-top: 5rem;
+            clip-path: polygon(0% 5%, 2.5% 0%, 5% 5%, 7.5% 0%, 10% 5%, 12.5% 0%, 15% 5%, 17.5% 0%, 20% 5%, 22.5% 0%, 25% 5%, 27.5% 0%, 30% 5%, 32.5% 0%, 35% 5%, 37.5% 0%, 40% 5%, 42.5% 0%, 45% 5%, 47.5% 0%, 50% 5%, 52.5% 0%, 55% 5%, 57.5% 0%, 60% 5%, 62.5% 0%, 65% 5%, 67.5% 0%, 70% 5%, 72.5% 0%, 75% 5%, 77.5% 0%, 80% 5%, 82.5% 0%, 85% 5%, 87.5% 0%, 90% 5%, 92.5% 0%, 95% 5%, 97.5% 0%, 100% 5%, 100% 100%, 0% 100%);
+        }
+        .footer-link {
+            color: var(--text-pencil);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .footer-link:hover { color: var(--accent-red); text-decoration: line-through; }
+
+        /* --- FAB --- */
+        .fab-container { position: fixed; bottom: 24px; right: 24px; display: flex; flex-direction: column; gap: 14px; z-index: 999; }
+        .fab-btn { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 8px 20px rgba(0,0,0,0.2); transition: 0.3s; }
+        .fab-top { background: var(--accent-blue); opacity: 0; transform: scale(0.8); }
+        .fab-top.show { opacity: 1; transform: scale(1); }
+
+        @media (max-width: 768px) {
+            .hero-image-container { transform: none; }
+            .active-marker { background: none; text-decoration: underline; }
+        }
+        /* --- SHARED NAVBAR CSS (Untuk Index & Buku) --- */
+
+.navbar {
+    background-color: rgba(253, 251, 247, 0.98); /* Warna kertas */
+    border-bottom: 3px dashed var(--text-pencil) !important;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+/* Brand Logo Jaya Jakarta */
+.navbar-brand {
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+    transform: rotate(-2deg);
+    display: inline-block;
+}
+
+/* Link Menu */
+.nav-link {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.3rem;
+    color: var(--text-pencil) !important;
+    margin: 0 12px;
+    position: relative;
+    font-weight: bold;
+}
+
+/* Efek Stabilo pada Menu Aktif */
+.active-marker {
+    background: #fff9c4; /* Kuning Highlighter */
+    /* Bentuk coretan tangan tidak beraturan */
+    border-radius: 50% 10% 40% 5% / 10% 40% 10% 50%;
+    transform: rotate(-1deg);
+    padding: 5px 18px !important;
+}
+
+/* Tombol Pesan WA (Gaya Sketsa) */
+.btn-sketch {
+    font-family: 'Kalam', cursive;
+    background: white;
+    color: var(--text-pencil);
+    border: 3px solid var(--text-pencil);
+    /* Border radius yang 'goyang' */
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 4px 4px 0px var(--text-pencil);
+    transition: all 0.2s ease;
+}
+
+.btn-sketch:hover {
+    background: var(--accent-red);
+    color: white !important;
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0px var(--text-pencil);
+}
+
+/* Responsive Mobile Menu */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: #fffdf5;
+        border: 3px solid var(--text-pencil);
+        border-radius: 15px;
+        margin-top: 15px;
+        padding: 20px;
+    }
+}
+    </style>
+
+    <footer class="footer-handdrawn">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4 col-md-12">
+                    <div class="fs-1 font-kalam mb-3">Jaya <span class="text-danger">Jakarta</span></div>
+                    <p class="fs-5">Catatan perjalanan, cinta, dan realita di jantung Indonesia. Novel yang mengajakmu melihat Jakarta dari sisi yang berbeda.</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4 class="font-kalam border-bottom border-dark pb-2 mb-3">Menu</h4>
+                            <a href="#" class="footer-link">Sinopsis</a>
+                            <a href="#" class="footer-link">Galeri</a>
+                            <a href="#" class="footer-link">Review</a>
+                        </div>
+                        <div class="col-6">
+                            <h4 class="font-kalam border-bottom border-dark pb-2 mb-3">Beli</h4>
+                            <a href="#" class="footer-link">Gramedia</a>
+                            <a href="#" class="footer-link">Shopee</a>
+                            <a href="#" class="footer-link">Tokopedia</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="wobbly-box p-4" style="background: var(--post-it-yellow); transform: rotate(1deg);">
+                        <h4 class="font-kalam mb-2">Update Terbaru!</h4>
+                        <p>Dapatkan info rilis bab baru.</p>
+                        <div class="input-group">
+                            <input type="email" class="form-control border-2 border-dark" placeholder="Email...">
+                            <button class="btn btn-dark fw-bold">Kirim</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 border-2 border-dark opacity-25" style="border-style: dashed;">
+            <div class="row pb-4 text-center">
+                <div class="col-12">
+                    <p>© 2026 Jaya Jakarta. Didesain dengan ❤ dan Pensil 2B.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+               <!-- FAB NOVEL JAYA -->
+<div class="fab-container">
+
+  <!-- Back To Top -->
+  <button class="fab-btn fab-top" id="backToTop" onclick="backToTop()" aria-label="Kembali ke atas">
+    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5" />
+      <path d="M5 12l7-7 7 7" />
+    </svg>
+  </button>
+
+  <!-- WhatsApp -->
+  <a
+    href="https://wa.me/628123456789?text=Halo%20Novel%20Jaya%2C%20saya%20ingin%20bertanya%20tentang%20buku"
+    target="_blank"
+    rel="noopener"
+    class="fab-btn fab-wa"
+    aria-label="Chat WhatsApp Novel Jaya"
+  >
+    <svg viewBox="0 0 512 512" width="26" height="26" aria-hidden="true">
+      <path fill="#FFFFFF" d="M256 32C132.3 32 32 128.9 32 248c0 50.6 18.1 97.3 48.3 134.2L48 480l101.6-30.1c33.4 18.3 71.8 28.7 112.4 28.7 123.7 0 224-96.9 224-216.6S379.7 32 256 32z"/>
+      <path fill="#25D366" d="M256 64c-105.9 0-192 83.6-192 184 0 46.3 18.2 89.4 48.4 121.6L96 416l50.5-14.7C177.6 420.8 215.8 432 256 432c105.9 0 192-83.6 192-184S361.9 64 256 64z"/>
+      <path fill="#FFFFFF" d="M341.6 299.2c-5.2-2.6-30.6-15-35.3-16.7-4.7-1.7-8.1-2.6-11.5 2.6-3.4 5.2-13.3 16.7-16.3 20.1-3 3.4-6 3.9-11.2 1.3-30.6-15-50.6-26.8-70.7-60.8-5.2-8.9 5.2-8.3 15-28.2 1.7-3.4.9-6.5-.4-9.1-1.3-2.6-11.5-27.4-15.8-37.6-4.3-10.4-8.7-9.1-11.5-9.1-3 0-6.5-.4-10-.4s-9.1 1.3-13.9 6.5c-4.8 5.2-18.3 17.9-18.3 43.7s18.7 50.8 21.3 54.2c2.6 3.4 36.9 56.3 89.5 78.9 12.5 5.4 22.3 8.6 29.9 11 12.6 4 24.1 3.4 33.2 2.1 10.1-1.5 30.6-12.5 34.9-24.6 4.3-12.1 4.3-22.5 3-24.6-1.3-2.1-4.7-3.4-9.9-6z"/>
+    </svg>
+  </a>
+
+</div>
+
+    <style>
+ /* ===============================
+   FAB CONTAINER
+   =============================== */
+
+.fab-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 999;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===============================
+   BASE FAB BUTTON
+   =============================== */
+
+.fab-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Hover Effect */
+.fab-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+}
+
+/* ===============================
+   BACK TO TOP
+   =============================== */
+
+.fab-top {
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+}
+
+.fab-top.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+.fab-top svg {
+  width: 26px;
+  height: 26px;
+}
+
+/* ===============================
+   WHATSAPP BUTTON
+   =============================== */
+
+.fab-wa {
+  background: linear-gradient(135deg, #25d366, #1ebe5d);
+  text-decoration: none;
+}
+
+/* ===============================
+   LABEL / TITLE
+   =============================== */
+
+.fab-btn::after {
+  content: "Novel Jaya";
+  position: absolute;
+  right: 68px;
+  background: #111;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0;
+  white-space: nowrap;
+  transform: translateX(10px);
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.fab-wa::after {
+  content: "Chat Novel Jaya";
+}
+
+.fab-top::after {
+  content: "Kembali ke Atas";
+}
+
+.fab-btn:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ===============================
+   SCREEN READER ONLY
+   =============================== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ===============================
+   MOBILE VERSION
+   =============================== */
+
+@media (max-width: 768px) {
+  .fab-container {
+    bottom: 16px;
+    right: 16px;
+    gap: 12px;
+  }
+
+  .fab-btn {
+    width: 52px;
+    height: 52px;
+  }
+
+  .fab-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Hide label on mobile for clean UI */
+  .fab-btn::after {
+    display: none;
+  }
+}
+
+    </style>
+
+    <script>
+        // Optimize Scroll Listener with Debounce concept (Simplified)
+        const topBtn = document.getElementById("backToTop");
+        
+        window.addEventListener("scroll", () => {
+            // Show button after scrolling down 300px
+            if (window.scrollY > 300) {
+                topBtn.classList.add("show");
+            } else {
+                topBtn.classList.remove("show");
+            }
+        }, { passive: true }); // Passive listener for scrolling performance
+
+        function backToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
