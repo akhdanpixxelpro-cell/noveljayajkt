@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Koleksi Buku | PuryBook</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Purity9 Bookstore</div>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-icon">
+        ☰
+    </label>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Koleksi</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<!-- Koleksi Buku -->
+<section class="books-section container">
+    <h2 class="section-title">Semua Koleksi Buku</h2>
+    <div class="books-grid">
+        <div class="book-card">
+            <img src="images/poster1.jpg" alt="Novel Inspiratif">
+            <h3>Novel Inspiratif</h3>
+            <p class="price">Rp 98.000</p>
+        </div>
+        <div class="book-card">
+            <img src="images/poster2.jpg" alt="Buku Edukasi">
+            <h3>Buku Edukasi</h3>
+            <p class="price">Rp 74.000</p>
+        </div>
+        <div class="book-card">
+            <img src="images/poster3.jpg" alt="Fiksi Modern">
+            <h3>Fiksi Modern</h3>
+            <p class="price">Rp 85.000</p>
+        </div>
+        <div class="book-card">
+            <img src="images/poster1.jpg" alt="Kumpulan Cerpen">
+            <h3>Kumpulan Cerpen</h3>
+            <p class="price">Rp 63.000</p>
+        </div>
+        <div class="book-card">
+            <img src="images/poster2.jpg" alt="Buku Motivasi">
+            <h3>Buku Motivasi</h3>
+            <p class="price">Rp 120.000</p>
+        </div>
+        <div class="book-card">
+            <img src="images/poster3.jpg" alt="Buku Referensi">
+            <h3>Buku Referensi</h3>
+            <p class="price">Rp 150.000</p>
+        </div>
+        <!-- Tambahkan buku lain sesuai kebutuhan -->
+    </div>
+</section>
+
+<!-- FOOTER 4 KOLUM -->
+<footer class="footer">
+    <div class="container footer-4cols">
+        <!-- Kolom 1: Logo & Deskripsi -->
+        <div class="footer-col">
+            <img src="images/logo.png" alt="PuryBook Logo" class="footer-logo">
+            <p>Toko buku online terbaik, menyediakan literatur, novel, dan buku edukasi untuk semua usia.</p>
+        </div>
+
+        <!-- Kolom 2: Menu Navigasi -->
+        <div class="footer-col">
+            <h4>Menu</h4>
+            <a href="index.html#home">Home</a>
+            <a href="koleksi.html">Koleksi</a>
+            <a href="index.html#about">Tentang</a>
+            <a href="index.html#contact">Kontak</a>
+        </div>
+
+        <!-- Kolom 3: Kategori Buku -->
+        <div class="footer-col">
+            <h4>Kategori</h4>
+            <a href="#">Novel</a>
+            <a href="#">Edukasi</a>
+            <a href="#">Fiksi</a>
+            <a href="#">Motivasi</a>
+            <a href="#">Referensi</a>
+        </div>
+
+        <!-- Kolom 4: Kontak & Sosial Media -->
+        <div class="footer-col">
+            <h4>Kontak</h4>
+            <p>Email: support@purybook.com</p>
+            <p>WhatsApp: +62 812 3456 7890</p>
+            <div class="socials">
+                <a href="#" target="_blank">FB</a>
+                <a href="#" target="_blank">IG</a>
+                <a href="#" target="_blank">TW</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 PuryBook. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+<style>
+    /* ===== GLOBAL RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+.container {
+    width: 93%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== COLORS ===== */
+:root {
+    --purple-main: #6f42c1;
+    --purple-light: #8c63d2;
+    --white: #fff;
+    --gray-light: #f5f5f5;
+}
+
+/* ===== HEADER ===== */
+.main-header {
+    background: var(--purple-main);
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 130px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 18px;
+}
+
+.nav-menu a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--gray-light);
+}
+
+.mobile-menu-btn {
+    display: none;
+    font-size: 26px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* ===== HERO ===== */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    color: var(--white);
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-purple {
+    background: var(--purple-main);
+    color: var(--white);
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-purple:hover {
+    background: var(--purple-light);
+}
+
+/* ===== BOOKS GRID ===== */
+.books-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section-title {
+    color: var(--purple-main);
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 24px;
+}
+
+.book-card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 18px rgba(0,0,0,0.15);
+}
+
+.book-card img {
+    width: 100%;
+    display: block;
+}
+
+.book-card h3 {
+    font-size: 18px;
+    margin: 12px 0 6px;
+    color: var(--purple-main);
+}
+
+.book-card .price {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+/* ===== ABOUT & CONTACT ===== */
+.about, .contact {
+    padding: 40px 0;
+    background: var(--gray-light);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.about h2, .contact h2 {
+    color: var(--purple-main);
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    text-align: center;
+    padding: 16px 0;
+    background: var(--purple-main);
+    color: var(--white);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 28px;
+    }
+    .btn-purple {
+        padding: 10px 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background: var(--purple-main);
+        padding: 12px 0;
+    }
+    .nav-menu.active {
+        display: flex;
+    }
+    .mobile-menu-btn {
+        display: block;
+    }
+    .books-grid {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 24px;
+    }
+    .section-title {
+        font-size: 24px;
+    }
+}
+/* ===== NAVBAR ===== */
+.navbar {
+    background: #6a1b9a;
+    color: #fff;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* Menu Desktop */
+.nav-menu ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    color: #d1b3ff;
+}
+
+/* ===== HAMBURGER ===== */
+#nav-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 26px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        background: #6a1b9a;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-menu li {
+        padding: 12px 0;
+    }
+
+    /* Toggle Menu */
+    #nav-toggle:checked ~ .nav-menu {
+        max-height: 300px;
+    }
+}
+/* ===== NAVBAR FIX ===== */
+.navbar {
+    background: #6a1b9a;
+    color: #fff;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* HIDE CHECKBOX */
+#menu-toggle {
+    display: none;
+}
+
+/* ICON */
+.menu-icon {
+    font-size: 26px;
+    cursor: pointer;
+    display: none;
+}
+
+/* MENU DESKTOP */
+.menu ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #6a1b9a;
+        display: none;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu li {
+        padding: 14px 0;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    /* 🔥 INI KUNCINYA */
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: block;
+    }
+}
+/* ===== FOOTER 4 KOLUM ===== */
+.footer {
+    background: var(--purple-main);
+    color: var(--white);
+    padding: 50px 0 20px 0;
+    font-size: 14px;
+}
+
+.footer-4cols {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-col {
+    flex: 1 1 200px;
+}
+
+.footer-col h4 {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: var(--white);
+}
+
+.footer-col a {
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: 6px;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    color: var(--purple-light);
+}
+
+.footer-col p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 12px;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 12px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.8);
+}
+
+/* ===== RESPONSIVE FOOTER ===== */
+@media (max-width: 1024px) {
+    .footer-4cols {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-4cols {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-col {
+        max-width: 300px;
+    }
+}
+
+</style>
+
+<script>
+function toggleNav() {
+    const nav = document.querySelector('.nav-menu');
+    nav.classList.toggle('active');
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</body>
+</html>

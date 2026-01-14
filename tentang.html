@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami | Purity9 Bookstore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-purple-50 font-sans text-gray-800">
+
+    <header class="navbar">
+    <div class="logo">Purity9 Bookstore</div>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-icon">
+        ☰
+    </label>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Koleksi</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold text-purple-900 mb-4">Mengenal Purity9</h1>
+            <div class="w-20 h-1 bg-purple-500 mx-auto rounded-full"></div>
+            <p class="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
+                Lebih dari sekadar toko buku, kami adalah wadah bagi para pemimpi, pemikir, dan pencari ilmu untuk menemukan jendela dunia.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-16 container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="text-3xl font-bold text-purple-800">Visi & Misi Kami</h2>
+                <p class="leading-relaxed text-gray-600">
+                    Purity9 didirikan pada prinsip kemurnian literasi. Kami percaya bahwa akses terhadap buku berkualitas haruslah mudah, estetis, dan menginspirasi.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                        <span>Menyediakan koleksi buku pilihan dari penulis lokal dan internasional.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                        <span>Membangun komunitas pembaca yang inklusif dan progresif.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                        <span>Memberikan pengalaman belanja yang nyaman dengan sentuhan layanan personal.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="relative">
+                <div class="bg-purple-200 w-full h-80 rounded-2xl shadow-inner flex items-center justify-center">
+                     <i class="fas fa-users text-purple-400 text-8xl"></i>
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-purple-700 text-white p-6 rounded-lg shadow-xl hidden md:block">
+                    <p class="text-2xl font-bold">10rb+</p>
+                    <p class="text-sm">Pelanggan Puas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-purple-100 py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-purple-900 mb-12">Kenapa Memilih Kami?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                    <div class="w-16 h-16 bg-purple-100 text-purple-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-gem text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Kualitas Premium</h3>
+                    <p class="text-gray-500">Setiap buku dipastikan dalam kondisi original dan terbaik untuk perpustakaan Anda.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                    <div class="w-16 h-16 bg-purple-100 text-purple-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-truck text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Pengiriman Cepat</h3>
+                    <p class="text-gray-500">Sistem logistik yang terintegrasi memastikan buku sampai tepat waktu dan aman.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                    <div class="w-16 h-16 bg-purple-100 text-purple-700 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Layanan Ramah</h3>
+                    <p class="text-gray-500">Tim kami siap membantu Anda menemukan genre yang paling sesuai dengan kepribadian Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* 1. Pengaturan Dasar & Variabel Warna */
+:root {
+    --primary-purple: #6a1b9a; /* Ungu Utama */
+    --light-purple: #9c4dcc;   /* Ungu Muda */
+    --dark-purple: #38006b;    /* Ungu Gelap */
+    --text-color: #333333;
+    --bg-light: #f9f5ff;       /* Background Ungu Sangat Muda */
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* 2. Container Judul Section (Bovel Terbaru) */
+.gb-element-c7e8fa06 {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.gb-text-f4b9fa84 {
+    color: var(--primary-purple);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.gb-text-af6a6f96 {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 3. Slider & Grid Produk */
+.splide__list {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.gb-loop-item {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.gb-loop-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(106, 27, 154, 0.15);
+}
+
+.gb-media-88a3e7e0 {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.gb-element-1374f0ce {
+    padding: 15px;
+    text-align: center;
+}
+
+.gb-text-bd1d20fe a {
+    color: var(--dark-purple);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.gb-text-bd1d20fe a:hover {
+    color: var(--light-purple);
+}
+
+.gb-text-500d2e6f {
+    color: var(--primary-purple);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 8px;
+}
+
+/* 4. Fitur Layanan (Info Boxes) */
+.gb-element-356649e6 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Desktop: 4 Kolom */
+    gap: 20px;
+    padding: 50px 5%;
+    background: var(--white);
+    margin-top: 50px;
+}
+
+.gb-element-70fab1d9, .gb-element-e72b211b, .gb-element-a07442f6, .gb-element-7fe9ff26 {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gb-element-356649e6 img {
+    width: 60px; /* Ukuran icon */
+    height: auto;
+    margin-bottom: 15px;
+    filter: sepia(100%) hue-rotate(250deg) saturate(200%); /* Memberi efek ungu pada icon hitam putih */
+}
+
+.font {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--dark-purple);
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+/* 5. RESPONSIVE DESIGN (MOBILE & TABLET) */
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+    .gb-element-356649e6 {
+        grid-template-columns: repeat(2, 1fr); /* Menjadi 2 kolom */
+    }
+    
+    .gb-text-f4b9fa84 {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+    .gb-element-356649e6 {
+        grid-template-columns: 1fr; /* Menjadi 1 kolom (tumpuk) */
+        padding: 30px 20px;
+    }
+
+    .splide__list {
+        flex-direction: column; /* Produk berderet ke bawah di mobile jika tidak pakai JS slider */
+        align-items: center;
+    }
+
+    .gb-loop-item {
+        width: 90%; /* Lebar produk hampir penuh di layar HP */
+        margin-bottom: 20px;
+    }
+
+    .gb-text-f4b9fa84 {
+        font-size: 1.7rem;
+    }
+}
+/* ===== NAVBAR FIX ===== */
+.navbar {
+    background: #6a1b9a;
+    color: #fff;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* HIDE CHECKBOX */
+#menu-toggle {
+    display: none;
+}
+
+/* ICON */
+.menu-icon {
+    font-size: 26px;
+    cursor: pointer;
+    display: none;
+}
+
+/* MENU DESKTOP */
+.menu ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #6a1b9a;
+        display: none;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu li {
+        padding: 14px 0;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    /* 🔥 INI KUNCINYA */
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: block;
+    }
+}
+
+    </style>
+
+    <footer class="bg-purple-900 text-purple-200 py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm">&copy; 2026 Purity9 Bookstore. Membawa inspirasi melalui literasi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
