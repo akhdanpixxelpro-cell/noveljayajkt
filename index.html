@@ -380,6 +380,22 @@
   color: #ffffff;
 }
 
+/* --- FOOTER STYLE --- */
+        .footer-handdrawn {
+            background-color: var(--muted);
+            position: relative;
+            padding: 5rem 0 2rem 0;
+            margin-top: 5rem;
+            clip-path: polygon(0% 5%, 2.5% 0%, 5% 5%, 7.5% 0%, 10% 5%, 12.5% 0%, 15% 5%, 17.5% 0%, 20% 5%, 22.5% 0%, 25% 5%, 27.5% 0%, 30% 5%, 32.5% 0%, 35% 5%, 37.5% 0%, 40% 5%, 42.5% 0%, 45% 5%, 47.5% 0%, 50% 5%, 52.5% 0%, 55% 5%, 57.5% 0%, 60% 5%, 62.5% 0%, 65% 5%, 67.5% 0%, 70% 5%, 72.5% 0%, 75% 5%, 77.5% 0%, 80% 5%, 82.5% 0%, 85% 5%, 87.5% 0%, 90% 5%, 92.5% 0%, 95% 5%, 97.5% 0%, 100% 5%, 100% 100%, 0% 100%);
+        }
+        .footer-link {
+            color: var(--text-pencil);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .footer-link:hover { color: var(--accent-red); text-decoration: line-through; }
         
     </style>
 </head>
@@ -486,7 +502,7 @@
             <div class="row g-4">
                 <div class="col-6 col-md-3">
                     <div class="book-card">
-                        <img src="https://placehold.co/300x450/e5e0d8/2d2d2d?text=Novel+1" alt="Laskar Pelangi" class="book-cover" loading="lazy">
+                        <img src="img/LaskarPelangi.jpg" alt="Laskar Pelangi" class="book-cover" loading="lazy">
                         <h5 class="mb-1">Laskar Pelangi</h5>
                         <p class="text-muted small mb-2">Andrea Hirata</p>
                         <div class="d-flex justify-content-between align-items-center">
@@ -499,7 +515,7 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="book-card">
-                        <img src="https://placehold.co/300x450/ff4d4d/white?text=Novel+2" alt="Bumi Manusia" class="book-cover" loading="lazy">
+                        <img src="img/BumiManusia.jpg" alt="Bumi Manusia" class="book-cover" loading="lazy">
                         <h5 class="mb-1">Bumi Manusia</h5>
                         <p class="text-muted small mb-2">Pramoedya A. Toer</p>
                         <div class="d-flex justify-content-between align-items-center">
@@ -512,7 +528,7 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="book-card">
-                        <img src="https://placehold.co/300x450/2d5da1/white?text=Novel+3" alt="Laut Bercerita" class="book-cover" loading="lazy">
+                        <img src="img/Laut Bercerita.jpg" alt="Laut Bercerita" class="book-cover" loading="lazy">
                         <h5 class="mb-1">Laut Bercerita</h5>
                         <p class="text-muted small mb-2">Leila S. Chudori</p>
                         <div class="d-flex justify-content-between align-items-center">
@@ -525,7 +541,7 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="book-card">
-                        <img src="https://placehold.co/300x450/fff9c4/2d2d2d?text=Komik" alt="Detektif Conan 100" class="book-cover" loading="lazy">
+                        <img src="img/Detektif Conan 100.jpg" alt="Detektif Conan 100" class="book-cover" loading="lazy">
                         <h5 class="mb-1">Detektif Conan 100</h5>
                         <p class="text-muted small mb-2">Aoyama Gosho</p>
                         <div class="d-flex justify-content-between align-items-center">
@@ -567,10 +583,10 @@
                     <div class="wobbly-box p-4" style="background: var(--post-it-yellow); transform: rotate(1deg);">
                         <h4 class="font-kalam mb-2">Update Terbaru!</h4>
                         <p>Dapatkan info rilis bab baru.</p>
-                        <form class="input-group">
-                            <input type="email" class="form-control border-2 border-dark" placeholder="Email..." required>
-                            <button class="btn btn-dark fw-bold" type="submit">Kirim</button>
-                        </form>
+                        <div class="input-group">
+                            <input type="email" class="form-control border-2 border-dark" placeholder="Email...">
+                            <button class="btn btn-dark fw-bold">Kirim</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -615,32 +631,44 @@
         </a>
     </div>
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
-        lucide.createIcons();
-        
-        // Modal Data Injection
-        const paymentModal = document.getElementById('paymentModal');
-        paymentModal.addEventListener('show.bs.modal', function (event) {
-            const button = event.relatedTarget;
-            document.getElementById('modalBookTitle').textContent = button.getAttribute('data-title');
-            document.getElementById('modalBookPrice').textContent = button.getAttribute('data-price');
-        });
+lucide.createIcons();
 
-        // Scroll Behavior & FAB visibility
-        const backToTopBtn = document.getElementById("backToTop");
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 400) {
-                backToTopBtn.classList.add("show");
-            } else {
-                backToTopBtn.classList.remove("show");
-            }
-        });
+const backToTopBtn = document.getElementById("backToTop");
 
-        backToTopBtn.addEventListener("click", () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script>
+/* Cari container yang benar-benar di-scroll */
+const scrollContainer =
+    document.scrollingElement ||
+    document.documentElement ||
+    document.body;
+
+/* Deteksi scroll */
+function handleScroll(){
+    const scrollTop = scrollContainer.scrollTop;
+
+    if(scrollTop > 300){
+        backToTopBtn.classList.add("show");
+    } else {
+        backToTopBtn.classList.remove("show");
+    }
+}
+
+/* Listen di semua kemungkinan */
+window.addEventListener("scroll", handleScroll, { passive:true });
+document.addEventListener("scroll", handleScroll, { passive:true });
+scrollContainer.addEventListener("scroll", handleScroll, { passive:true });
+
+/* Klik naik ke atas */
+backToTopBtn.addEventListener("click", function(){
+    scrollContainer.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+</script>
+
 </body>
 </html>
