@@ -19,10 +19,10 @@
 
     <nav class="menu">
         <ul>
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Koleksi</a></li>
-            <li><a href="#">Tentang</a></li>
-            <li><a href="#">Kontak</a></li>
+             <li><a href="index.html">Beranda</a></li>
+            <li><a href="kolesi.html">Koleksi</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="blog.html">Blog</a></li>
         </ul>
     </nav>
 </header>
@@ -30,42 +30,90 @@
 
 
 <!-- Koleksi Buku -->
-<section class="books-section container">
-    <h2 class="section-title">Semua Koleksi Buku</h2>
-    <div class="books-grid">
-        <div class="book-card">
-            <img src="images/poster1.jpg" alt="Novel Inspiratif">
-            <h3>Novel Inspiratif</h3>
-            <p class="price">Rp 98.000</p>
+<section class="books-section container py-5">
+    <h2 class="section-title text-center mb-4">Semua Koleksi Buku</h2>
+    <div class="books-grid row row-cols-2 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="book-card h-100 text-center p-2 border rounded shadow-sm">
+                <div class="book-img-wrapper mb-2">
+                    <img src="img/KumpulanCerpenSenandungKunangkunang.webp" alt="Novel Inspiratif" class="img-fluid">
+                </div>
+                <h3 class="fs-6">Novel Inspiratif</h3>
+                <p class="price text-purple">Rp 98.000</p>
+            </div>
         </div>
-        <div class="book-card">
-            <img src="images/poster2.jpg" alt="Buku Edukasi">
-            <h3>Buku Edukasi</h3>
-            <p class="price">Rp 74.000</p>
+        <div class="col">
+            <div class="book-card h-100 text-center p-2 border rounded shadow-sm">
+                <div class="book-img-wrapper mb-2">
+                    <img src="img/Detektif Conan 100.jpg" alt="Buku Edukasi" class="img-fluid">
+                </div>
+                <h3 class="fs-6">Buku Edukasi</h3>
+                <p class="price text-purple">Rp 74.000</p>
+            </div>
         </div>
-        <div class="book-card">
-            <img src="images/poster3.jpg" alt="Fiksi Modern">
-            <h3>Fiksi Modern</h3>
-            <p class="price">Rp 85.000</p>
+        <div class="col">
+            <div class="book-card h-100 text-center p-2 border rounded shadow-sm">
+                <div class="book-img-wrapper mb-2">
+                    <img src="img/Metropolitan Love.jpg" alt="Fiksi Modern" class="img-fluid">
+                </div>
+                <h3 class="fs-6">Fiksi Modern</h3>
+                <p class="price text-purple">Rp 85.000</p>
+            </div>
         </div>
-        <div class="book-card">
-            <img src="images/poster1.jpg" alt="Kumpulan Cerpen">
-            <h3>Kumpulan Cerpen</h3>
-            <p class="price">Rp 63.000</p>
+        <div class="col">
+            <div class="book-card h-100 text-center p-2 border rounded shadow-sm">
+                <div class="book-img-wrapper mb-2">
+                    <img src="img/SenjadiKotaTua.jpg" alt="Kumpulan Cerpen" class="img-fluid">
+                </div>
+                <h3 class="fs-6">Kumpulan Cerpen</h3>
+                <p class="price text-purple">Rp 63.000</p>
+            </div>
         </div>
-        <div class="book-card">
-            <img src="images/poster2.jpg" alt="Buku Motivasi">
-            <h3>Buku Motivasi</h3>
-            <p class="price">Rp 120.000</p>
+        <div class="col">
+            <div class="book-card h-100 text-center p-2 border rounded shadow-sm">
+                <div class="book-img-wrapper mb-2">
+                    <img src="img/LaskarPelangi.jpg" alt="Buku Motivasi" class="img-fluid">
+                </div>
+                <h3 class="fs-6">Buku Motivasi</h3>
+                <p class="price text-purple">Rp 120.000</p>
+            </div>
         </div>
-        <div class="book-card">
-            <img src="images/poster3.jpg" alt="Buku Referensi">
-            <h3>Buku Referensi</h3>
-            <p class="price">Rp 150.000</p>
+        <div class="col">
+            <div class="book-card h-100 text-center p-2 border rounded shadow-sm">
+                <div class="book-img-wrapper mb-2">
+                    <img src="img/BumiManusia.jpg" alt="Buku Referensi" class="img-fluid">
+                </div>
+                <h3 class="fs-6">Buku Referensi</h3>
+                <p class="price text-purple">Rp 150.000</p>
+            </div>
         </div>
-        <!-- Tambahkan buku lain sesuai kebutuhan -->
     </div>
 </section>
+
+<style>
+    .books-grid .book-img-wrapper {
+        width: 100%;
+        aspect-ratio: 1 / 1; /* Membuat kotak persegi */
+        overflow: hidden;
+    }
+
+    .books-grid .book-img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    }
+
+    .price {
+        font-weight: bold;
+        color: #6f42c1; /* Warna ungu */
+    }
+
+    .section-title {
+        font-weight: 700;
+        color: #4b0082; /* Warna ungu gelap */
+    }
+</style>
+
 
 <!-- FOOTER 4 KOLUM -->
 <footer class="footer">
@@ -585,10 +633,112 @@ body {
 
 </style>
 
+
+
 <script>
 function toggleNav() {
     const nav = document.querySelector('.nav-menu');
     nav.classList.toggle('active');
+}
+</script>
+
+<div class="fab-container">
+
+    <!-- BACK TO TOP -->
+    <div class="fab-btn fab-top" id="backToTop" onclick="backToTop()">
+        <!-- SVG PANAH -->
+        <svg viewBox="0 0 24 24" fill="none"
+             stroke="white" stroke-width="2.5"
+             stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5" />
+            <path d="M5 12l7-7 7 7" />
+        </svg>
+    </div>
+
+    <!-- WHATSAPP -->
+     <div class="fab-btn fab-wa">
+    <!-- SVG DI SINI -->
+   
+
+<a href="https://wa.me/628123456789?text=Halo%20saya%20ingin%20bertanya"
+   target="_blank">
+<svg viewBox="0 0 512 512" width="28" height="28">
+  <!-- BALON CHAT -->
+  <path fill="#FFFFFF" d="M256 32C132.3 32 32 128.9 32 248c0 50.6 18.1 97.3 48.3 134.2L48 480l101.6-30.1c33.4 18.3 71.8 28.7 112.4 28.7 123.7 0 224-96.9 224-216.6S379.7 32 256 32z"/>
+  
+  <!-- LOGO WA -->
+  <path fill="#25D366" d="M256 64c-105.9 0-192 83.6-192 184 0 46.3 18.2 89.4 48.4 121.6L96 416l50.5-14.7C177.6 420.8 215.8 432 256 432c105.9 0 192-83.6 192-184S361.9 64 256 64z"/>
+
+  <!-- TELEPON WA -->
+  <path fill="#FFFFFF" d="M341.6 299.2c-5.2-2.6-30.6-15-35.3-16.7-4.7-1.7-8.1-2.6-11.5 2.6-3.4 5.2-13.3 16.7-16.3 20.1-3 3.4-6 3.9-11.2 1.3-30.6-15-50.6-26.8-70.7-60.8-5.2-8.9 5.2-8.3 15-28.2 1.7-3.4.9-6.5-.4-9.1-1.3-2.6-11.5-27.4-15.8-37.6-4.3-10.4-8.7-9.1-11.5-9.1-3 0-6.5-.4-10-.4s-9.1 1.3-13.9 6.5c-4.8 5.2-18.3 17.9-18.3 43.7s18.7 50.8 21.3 54.2c2.6 3.4 36.9 56.3 89.5 78.9 12.5 5.4 22.3 8.6 29.9 11 12.6 4 24.1 3.4 33.2 2.1 10.1-1.5 30.6-12.5 34.9-24.6 4.3-12.1 4.3-22.5 3-24.6-1.3-2.1-4.7-3.4-9.9-6z"/>
+</svg>
+</a>
+</div>
+
+</div>
+
+<style>
+    .fab-container {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.fab-btn {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    box-shadow: 0 6px 18px rgba(0,0,0,.35);
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.fab-btn:hover {
+    transform: scale(1.1);
+}
+
+.fab-wa {
+    background: #25D366;
+}
+
+/* ukuran ikon svg */
+.fab-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+.fab-top {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fab-top.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+</style>
+
+<script>
+const topBtn = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        topBtn.classList.add("show");
+    } else {
+        topBtn.classList.remove("show");
+    }
+});
+
+function backToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
 }
 </script>
 
