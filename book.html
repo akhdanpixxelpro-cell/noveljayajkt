@@ -97,6 +97,57 @@
         </section>
     </main>
 
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const checkboxes = document.querySelectorAll('.sidebar input[type="checkbox"]');
+    const priceRange = document.querySelector('.sidebar input[type="range"]');
+    const priceText = document.querySelector('.sidebar p');
+    const products = document.querySelectorAll('.product-item');
+
+    // Fungsi filter produk
+    function filterProducts() {
+        const selectedCategories = Array.from(checkboxes)
+            .filter(cb => cb.checked)
+            .map(cb => cb.nextElementSibling.textContent.toLowerCase());
+
+        const maxPrice = parseInt(priceRange.value);
+
+        products.forEach(product => {
+            const category = product.querySelector('.badge')?.textContent.toLowerCase() || '';
+            const price = parseInt(product.querySelector('.price').textContent.replace(/[Rp\s.]/g,''));
+            
+            // Tampilkan jika termasuk kategori dan harga <= slider
+            if ((selectedCategories.length === 0 || selectedCategories.includes(category)) && price <= maxPrice) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+    }
+
+    // Event checkbox
+    checkboxes.forEach(cb => cb.addEventListener('change', filterProducts));
+
+    // Event slider
+    priceRange.addEventListener('input', () => {
+        priceText.textContent = `Rp 0 - Rp ${parseInt(priceRange.value).toLocaleString('id-ID')}`;
+        filterProducts();
+    });
+
+    // Tombol Tambah ke Keranjang
+    document.querySelectorAll('.btn-add').forEach(button => {
+        button.addEventListener('click', () => {
+            const productName = button.closest('.product-item').querySelector('h4').textContent;
+            alert(`${productName} berhasil ditambahkan ke keranjang!`);
+        });
+    });
+
+    // Inisialisasi awal
+    filterProducts();
+});
+</script>
+
+
     <style>
         
         :root {

@@ -140,48 +140,48 @@
 
             <div class="splide__slide">
                 <div class="book-card">
-                    <a href="https://theme.co.id/purity9-bookstore/product/kumpulan-cerpen-senandung-kunang-kunang/">
+                    <a href="https://api.whatsapp.com/send/?phone=628123456789&text=Halo+saya+ingin+bertanya&type=phone_number&app_absent=0">
                         <div class="book-cover">
                             <img src="https://theme.co.id/purity9-bookstore/wp-content/uploads/2025/12/book8.webp" alt="Kumpulan Cerpen Senandung Kunang – kunang">
                         </div>
                     </a>
-                    <h3><a href="https://theme.co.id/purity9-bookstore/product/kumpulan-cerpen-senandung-kunang-kunang/">Kumpulan Cerpen Senandung Kunang – kunang</a></h3>
+                    <h3><a href="https://api.whatsapp.com/send/?phone=628123456789&text=Halo+saya+ingin+bertanya&type=phone_number&app_absent=0">Kumpulan Cerpen Senandung Kunang – kunang</a></h3>
                     <p class="price">Rp 33.000</p>
                 </div>
             </div>
 
             <div class="splide__slide">
                 <div class="book-card">
-                    <a href="https://theme.co.id/purity9-bookstore/product/novel-mimpi-ihwal-andra-winata/">
+                    <a href="https://api.whatsapp.com/send/?phone=628123456789&text=Halo+saya+ingin+bertanya&type=phone_number&app_absent=0">
                         <div class="book-cover">
                             <img src="https://theme.co.id/purity9-bookstore/wp-content/uploads/2025/12/book7.webp" alt="Novel Mimpi – Ihwal Andra Winata">
                         </div>
                     </a>
-                    <h3><a href="https://theme.co.id/purity9-bookstore/product/novel-mimpi-ihwal-andra-winata/">Novel Mimpi – Ihwal Andra Winata</a></h3>
+                    <h3><a href="https://api.whatsapp.com/send/?phone=628123456789&text=Halo+saya+ingin+bertanya&type=phone_number&app_absent=0">Novel Mimpi – Ihwal Andra Winata</a></h3>
                     <p class="price">Rp 276.000</p>
                 </div>
             </div>
 
             <div class="splide__slide">
                 <div class="book-card">
-                    <a href="https://theme.co.id/purity9-bookstore/product/novel-aku-tak-mau-jadi-parasit-kehidupan/">
+                    <a href="https://api.whatsapp.com/send/?phone=628123456789&text=Halo+saya+ingin+bertanya&type=phone_number&app_absent=0">
                         <div class="book-cover">
                             <img src="https://theme.co.id/purity9-bookstore/wp-content/uploads/2025/12/book6.webp" alt="Novel Aku Tak Mau Jadi Parasit Kehidupan">
                         </div>
                     </a>
-                    <h3><a href="https://theme.co.id/purity9-bookstore/product/novel-aku-tak-mau-jadi-parasit-kehidupan/">Novel Aku Tak Mau Jadi Parasit Kehidupan</a></h3>
+                    <h3><a href="https://api.whatsapp.com/send/?phone=628123456789&text=Halo+saya+ingin+bertanya&type=phone_number&app_absent=0">Novel Aku Tak Mau Jadi Parasit Kehidupan</a></h3>
                     <p class="price">Rp 40.000</p>
                 </div>
             </div>
 
             <div class="splide__slide">
                 <div class="book-card">
-                    <a href="https://theme.co.id/purity9-bookstore/product/novel-aku-di-sini-untukmu/">
+                    <a href="https://api.whatsapp.com/send/?phone=628123456789&text=Halo+saya+ingin+bertanya&type=phone_number&app_absent=0">
                         <div class="book-cover">
                             <img src="https://theme.co.id/purity9-bookstore/wp-content/uploads/2025/12/book5.webp" alt="Novel Aku di Sini Untukmu">
                         </div>
                     </a>
-                    <h3><a href="https://theme.co.id/purity9-bookstore/product/novel-aku-di-sini-untukmu/">Novel Aku di Sini Untukmu</a></h3>
+                    <h3><a href="https://api.whatsapp.com/send/?phone=628123456789&text=Halo+saya+ingin+bertanya&type=phone_number&app_absent=0">Novel Aku di Sini Untukmu</a></h3>
                     <p class="price">Rp 125.000</p>
                 </div>
             </div>
@@ -189,6 +189,40 @@
         </div>
     </div>
 </div>
+
+<div id="paidModal" class="paid-modal">
+    <div class="paid-box">
+        <span class="paid-close">&times;</span>
+        <h3>Akses Berbayar</h3>
+        <p>Untuk melihat detail dan membeli buku ini, silakan lanjutkan ke halaman berbayar.</p>
+
+        <button id="paidContinue" class="paid-btn">
+            Lanjutkan ke Pembelian
+        </button>
+    </div>
+</div>
+
+<script>
+let paidTarget = '';
+
+document.querySelectorAll('.book-card a').forEach(link => {
+    link.addEventListener('click', function(e){
+        e.preventDefault();
+        paidTarget = this.getAttribute('href');
+        document.getElementById('paidModal').style.display = 'flex';
+    });
+});
+
+document.getElementById('paidContinue').addEventListener('click', function(){
+    window.location.href = paidTarget;
+});
+
+document.querySelectorAll('.paid-close').forEach(btn => {
+    btn.addEventListener('click', function(){
+        document.getElementById('paidModal').style.display = 'none';
+    });
+});
+</script>
 
 
 
@@ -266,6 +300,139 @@
 	
 	</div>
 </div>
+
+<section class="faq-section">
+    <div class="faq-container">
+        <h2 class="section-title">Pertanyaan Sering Diajukan (FAQ)</h2>
+        
+        <div class="faq-item">
+            <button class="faq-question">Bagaimana cara memesan buku di Purity9? <span>+</span></button>
+            <div class="faq-answer">
+                <p>Anda dapat memilih buku melalui menu Katalog, masukkan ke keranjang, dan lakukan checkout. Kami akan mengirimkan detail pembayaran melalui email atau WhatsApp resmi kami.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Berapa lama proses pengiriman? <span>+</span></button>
+            <div class="faq-answer">
+                <p>Untuk wilayah dalam kota biasanya memakan waktu 1-2 hari kerja. Untuk luar kota berkisar antara 3-5 hari kerja tergantung ekspedisi yang Anda pilih.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Apakah buku yang dijual 100% original? <span>+</span></button>
+            <div class="faq-answer">
+                <p>Ya, Purity9 Bookstore hanya menjual buku original dan baru langsung dari penerbit resmi untuk mendukung karya para penulis.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Bagaimana jika buku yang diterima rusak? <span>+</span></button>
+            <div class="faq-answer">
+                <p>Kami memiliki garansi retur. Anda dapat mengirimkan video unboxing ke layanan pelanggan kami dalam 2x24 jam setelah paket diterima untuk proses penggantian baru.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* --- CSS FAQ ACCORDION --- */
+.faq-section {
+    padding: 60px 5%;
+    background-color: #ffffff;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border: 1px solid var(--light-purple);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 20px;
+    background: var(--white);
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.faq-question:hover {
+    background: var(--light-purple);
+}
+
+.faq-question span {
+    font-size: 1.5rem;
+    color: var(--primary);
+    transition: transform 0.3s;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: #fdfbff;
+}
+
+.faq-answer p {
+    padding: 20px;
+    margin: 0;
+    color: #555;
+    line-height: 1.6;
+    border-top: 1px solid var(--light-purple);
+}
+
+/* Class saat aktif (dibuka lewat JS) */
+.faq-item.active .faq-answer {
+    max-height: 200px; /* Atur sesuai panjang teks */
+}
+
+.faq-item.active .faq-question span {
+    transform: rotate(45deg); /* Ubah + jadi x */
+}
+
+@media (max-width: 600px) {
+    .faq-question {
+        font-size: 1rem;
+        padding: 15px;
+    }
+}
+</style>
+
+<script>
+    const faqQuestions = document.querySelectorAll(".faq-question");
+
+    faqQuestions.forEach(question => {
+        question.addEventListener("click", () => {
+            const item = question.parentElement;
+            
+            // Tutup item lain yang sedang terbuka (opsional)
+            document.querySelectorAll(".faq-item").forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove("active");
+                }
+            });
+
+            // Buka/tutup item yang diklik
+            item.classList.toggle("active");
+        });
+    });
+</script>
 
     <!-- FOOTER 4 KOLUM MODERN -->
 <footer class="footer">
@@ -1024,6 +1191,52 @@ img {
     color: #e60023;
 }
 
+.paid-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.paid-box {
+    background: #fff;
+    max-width: 400px;
+    width: 90%;
+    padding: 24px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+}
+
+.paid-box h3 {
+    margin-bottom: 10px;
+}
+
+.paid-box p {
+    font-size: 14px;
+    color: #555;
+}
+
+.paid-btn {
+    margin-top: 18px;
+    padding: 10px 20px;
+    background: #6a1b9a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.paid-close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    font-size: 22px;
+    cursor: pointer;
+}
 
     </style>
 
