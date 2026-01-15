@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami | Purity9 Bookstore</title>
+    <title>Tentang Kami | NovelJaya</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -11,7 +11,7 @@
 <body class="bg-purple-50 font-sans text-gray-800">
 
     <header class="navbar">
-    <div class="logo">Purity9 Bookstore</div>
+    <div class="logo">NovelJaya</div>
 
     <input type="checkbox" id="menu-toggle">
 
@@ -47,7 +47,7 @@
 
     <section class="py-16 bg-white">
         <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl font-bold text-purple-900 mb-4">Mengenal Purity9</h1>
+            <h1 class="text-4xl font-bold text-purple-900 mb-4">Mengenal Novel Jaya</h1>
             <div class="w-20 h-1 bg-purple-500 mx-auto rounded-full"></div>
             <p class="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
                 Lebih dari sekadar toko buku, kami adalah wadah bagi para pemimpi, pemikir, dan pencari ilmu untuk menemukan jendela dunia.
@@ -117,6 +117,22 @@
             </div>
         </div>
     </section>
+
+    <section class="cta-novel-jaya">
+  <div class="cta-box">
+    <h2>Temukan Dunia Cerita Bersama Novel Jaya</h2>
+    <p>
+      Kami percaya setiap buku memiliki kekuatan untuk mengubah cara berpikir dan merasakan.
+      Jelajahi koleksi terbaik kami dan temukan kisah yang akan menemani perjalananmu.
+    </p>
+
+    <div class="cta-buttons">
+      <a href="kolesi.html" class="btn-cta primary">Jelajahi Koleksi</a>
+      <a href="https://api.whatsapp.com/send/?phone=628123456789&text=Halo+saya+ingin+bertanya&type=phone_number&app_absent=0" class="btn-cta secondary">Hubungi Kami</a>
+    </div>
+  </div>
+</section>
+
 
     <style>
         /* 1. Pengaturan Dasar & Variabel Warna */
@@ -412,6 +428,83 @@ body {
 
     .about-content p {
         font-size: 14px;
+    }
+}
+.cta-novel-jaya {
+    background: linear-gradient(135deg, #5b2be0, #8f5bff);
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.cta-box {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255,255,255,0.08);
+    padding: 60px 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+}
+
+.cta-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-box p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-cta {
+    padding: 14px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+    font-size: 1rem;
+}
+
+.btn-cta.primary {
+    background: #ffffff;
+    color: #5b2be0;
+}
+
+.btn-cta.primary:hover {
+    background: #f2edff;
+    transform: translateY(-3px);
+}
+
+.btn-cta.secondary {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-cta.secondary:hover {
+    background: #fff;
+    color: #5b2be0;
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .cta-box h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-box {
+        padding: 40px 25px;
     }
 }
 
